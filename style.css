@@ -72,6 +72,7 @@ body {
     padding: 50px ;
     text-align: left;
     align-self: flex-start;
+    font-size: 1.3vw;
 }
 
 .text-product h1 {
@@ -85,7 +86,7 @@ body {
     margin: 0;
 }
 .text-product p {
-    font-size: 1.3vw;
+    /* font-size: 1.3vw; */
     text-align: justify;
 }
 
@@ -99,7 +100,7 @@ body {
 .formulaire {
     display: flex;
     flex-direction: column;
-    font-size: 1.3vw;
+    /* font-size: 1.3vw; */
     margin: 30px 0;
 }
 .formulaire label {
@@ -117,7 +118,7 @@ body {
 .prix {
     margin: 20px 0;
     padding-bottom: 3px;
-    font-size: 1.3vw;
+    /* font-size: 1.3vw; */
     font-weight: bold;
     border-bottom: 1px solid #1D1A05;
 }
@@ -129,7 +130,7 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
     padding: 10px;
     text-transform: uppercase;
     transition: opacity 0.5s ease-in-out;
@@ -208,7 +209,7 @@ nav .img-container img {
 
 .panier{
     position: absolute;
-    right: -0.1vw;
+    right: -3px;
     color: #fefefe;
     width: 1.5vw;
     height: 1.5vw;
@@ -253,12 +254,18 @@ footer h3 {
     .background {
         display: none;
     }
+    .product {
+        width: 80%;
+    }
     #first-img {
         position: relative;
         top: 0px;
     }
     .img-product-container{
-        margin: 150px 0px 0px;
+        margin: 100px 0px 0px;
+    }
+    .text-product {
+        top: 100px;
     }
     .text-product h1 {
         position: relative;
@@ -270,20 +277,58 @@ footer h3 {
     .list-item {
         color:#fefefe;
     }
+    .account-item {
+        font-size: 2vw;
+    }
+    .account {
+        top: 100px;
+    }
+    .nav-container {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 425px) {
     .product {
         flex-direction: column;
+        width: 100%;
     }
+    
     .img-product-container {
         display: flex;
-        width: 80%;
+        width: 95%;
     }
     .text-product {
         padding: 10px;
-        width: 80%;
+        width: 95%;
         align-self: auto;
+        font-size: 3vw;
+    }
+    
+    .nav-container {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        height: 70px;
+        border-radius: 0px;
+    }
+    .list-item {
+        font-size: 3vw;
+        line-height: 70px;
+    }
+    nav .img-container img {
+        transform: scale(2);
+    }
+    .noel {
+        top: 10%;
+       width: 8vw;
+       height: 8vw;
+    }
+    .account {
+        display: flex;
+        flex-direction: column;
+        right: 10px;
     }
     /* .slide {
         display: block;
